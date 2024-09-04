@@ -17,8 +17,8 @@ export function Hero() {
           <Link href="/" className="flex items-center gap-2">
             <Image src={Logo} className="size-10" alt="Logo" />
 
-            <h4 className="text-3xl font-semibold">
-              Blog<span className="text-primary">Marshal</span>
+            <h4 className="text-2xl font-semibold">
+              Blogger for <span className="text-primary"> Bussines in network </span>
             </h4>
           </Link>
           <div className="md:hidden">
@@ -80,7 +80,7 @@ export function Hero() {
                   ></path>
                   <path
                     d="M0 322.2V400H240H320L106.2 134.75L0 322.2Z"
-                    fill="#7C87F8"
+                    fill="#ff5733" //Color Red 
                   ></path>
                   <path
                     d="M320 400H400V78.75L106.2 134.75L320 400Z"
