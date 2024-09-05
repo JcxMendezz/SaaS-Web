@@ -1,6 +1,6 @@
 "use client";
 
-import { UploadDropzone } from "@/app/utils/UploadthingComponents";
+import { UploadDropzone } from "@/src/app/utils/UploadthingComponents";
 import {
   Card,
   CardContent,
@@ -13,7 +13,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { SubmitButton } from "../SubmitButtons";
 import { toast } from "sonner";
-import { UpdateImage } from "@/app/actions";
+import { UpdateImage } from "@/src/app/actions";
 
 interface iAppProps {
   siteId: string;

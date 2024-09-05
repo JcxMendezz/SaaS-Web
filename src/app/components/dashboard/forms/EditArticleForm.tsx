@@ -1,6 +1,6 @@
 "use client";
 
-import { UploadDropzone } from "@/app/utils/UploadthingComponents";
+import { UploadDropzone } from "@/src/app/utils/UploadthingComponents";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -21,8 +21,8 @@ import { useActionState, useState } from "react";
 import { JSONContent } from "novel";
 import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
-import { PostSchema } from "@/app/utils/zodSchemas";
-import { CreatePostAction, EditPostActions } from "@/app/actions";
+import { PostSchema } from "@/src/app/utils/zodSchemas";
+import { CreatePostAction, EditPostActions } from "@/src/app/actions";
 import slugify from "react-slugify";
 
 interface iAppProps {
