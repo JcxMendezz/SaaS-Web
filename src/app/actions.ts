@@ -120,7 +120,7 @@ export async function CreatePostAction(prevState: any, formData: FormData) {
 
 export async function EditPostActions(prevState: any, formData: FormData) {
   const user = await requireUser();
-
+  
   const submission = parseWithZod(formData, {
     schema: PostSchema,
   });
@@ -230,11 +230,11 @@ export async function CreateSubscription() {
     },
     success_url:
       process.env.NODE_ENV === "production"
-        ? "https://blog-marshal.vercel.app/dashboard/payment/success"
+        ? "https://jcx-blog.vercel.app/dashboard/payment/success"
         : "http://localhost:3000/dashboard/payment/success",
     cancel_url:
       process.env.NODE_ENV === "production"
-        ? "https://blog-marshal.vercel.app/dashboard/payment/cancelled"
+        ? "https://jcx-blog.vercel.app/dashboard/payment/cancelled"
         : "http://localhost:3000/dashboard/payment/cancelled",
   });
 

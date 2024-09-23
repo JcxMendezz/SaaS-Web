@@ -16,7 +16,10 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Blogger SaaS",
   description: "Blogger SaaS for business in network",
-};
+  icons: {
+    icon: "/SaaS-Web/public/logo.svg",
+  },
+};  
 
 export default function RootLayout({
   children,

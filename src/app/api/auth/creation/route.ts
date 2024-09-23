@@ -31,7 +31,7 @@ export async function GET() {
 
   return NextResponse.redirect(
     process.env.NODE_ENV === "production"
-      ? "https://blog-marshal.vercel.app/dashboard"
+      ? "https://jcx-blog.vercel.app/dashboard"
       : "http://localhost:3000/dashboard"
   );
 }
