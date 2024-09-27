@@ -12,14 +12,14 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { useActionState } from "react";
+import { useFormState } from "react-dom";
 import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
 import { siteSchema } from "@/src/app/utils/zodSchemas";
 import { SubmitButton } from "@/src/app/components/dashboard/SubmitButtons";
 
 export default function NewSiteRoute() {
-  const [lastResult, action] = useActionState(CreateSiteAction, undefined);
+  const [lastResult, action] = useFormState(CreateSiteAction, undefined);
   const [form, fields] = useForm({
     lastResult,
 
